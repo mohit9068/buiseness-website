@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+background: url("https://images6.alphacoders.com/371/371656.jpg"); 
+ background-size: cover;
+}
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0px 0px -100px;
+  border-radius: 12px;
+  margin-top: 70px;
+  width: 800px;
+  background-position: center;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  background:rgba(0,0,0,0.3);
+   border-radius:10px 10px 0 0 ;
+   
+  color: black;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  background:rgba(0,0,0,0.3);
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 10px;
+  color: black;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://imageshack.com/a/img923/1636/EUGOo7.jpg");
+}
+.second{
+  background-image: url("http://imageshack.com/a/img924/3066/ZrMGYF.jpg");
+}
+.third{
+  background-image: url("http://imageshack.com/a/img922/7445/D3ItPS.jpg");
+}
+.fourth{
+  background-image: url("http://imageshack.com/a/img922/1246/xq1ZOe.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Mobomarket</h1>
+<h2>Get the Best Phone you want</h2>
+<div class="first">
+  <p>IPhone 7 <span class="price">60,000/-</span><br />
+  <small>THE GOOD Improved front and rear cameras -- now with optical image stabilization -- deliver much improved photos, especially in low light. Water resistant. A faster processor, plus better battery life. More onboard storage than last year's models for the same price.<a href="http://www.gsmarena.com/apple_iphone_7-8064.php">Click here for detailed description</a></small></p>
+</div>
+
+<div class="second">
+  <p>Samsung Galaxy Note 7<span class="price">49,500/-</span><br />
+  <small>The Samsung Galaxy Note7 is powered by 1.6GHz octa-core Exynos 8890 processor and it comes with 4GB of RAM. The phone packs 64GB of internal storage that can be expanded up to 256GB via a microSD card. ... The Samsung Galaxy Note7 is a dual SIM (GSM and GSM) smartphone that accepts two Nano-SIM.<a href="http://www.gsmarena.com/samsung_galaxy_note7-8082.php">Click here for detailed description</a></small></p>
+</div>
+  
+<div class="third">
+  <p>Google Pixel<span class="price">57,000/-</span><br />
+  <small>The Google Pixel is rumored to have 12 MP primary camera and 8 MP front facing camera as the Nexus 6P which was released last year. The Nexus mobiles didn’t get that much fame last year as compared to the previous years. The other thing is, it will be a 5? inch display for Google Pixel and 5.5? inch Display for Google Pixel XL..<a href="http://www.gsmarena.com/google_pixel_xl-8345.php">Click here for detailed description</a></small></p>
+</div>
+<div class="fourth">
+  <p>LG G5<span class="price">33,449/-</span><br />
+  <small>The LG G5 is powered by 2.15GHz quad-core Qualcomm Snapdragon 820 processor and it comes with 4GB of RAM. The phone packs 32GB of internal storage that can be expanded up to 200GB via a microSD card. ... The LG G5 is a dual SIM (GSM and GSM) smartphone that accepts two Nano-SIM.<a href="http://www.gsmarena.com/lg_g5-7815.php">Click here for detailed description</a></small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
